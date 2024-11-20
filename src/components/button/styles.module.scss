@@ -1,0 +1,26 @@
+.button {
+  background-color: rgb(165, 47, 47);
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+
+  border: 2px solid rgb(165, 47, 47);
+
+  &:hover {
+    background-color: rgb(126, 27, 27);
+  }
+}
+
+.button.secondary {
+  background-color: transparent;
+  border: 2px solid rgb(165, 47, 47);
+  color: rgb(126, 27, 27);
+
+  &:hover {
+    background-color: rgba(165, 47, 47, 0.363);
+  }
+}

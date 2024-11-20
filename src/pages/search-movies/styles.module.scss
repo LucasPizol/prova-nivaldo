@@ -1,0 +1,62 @@
+.container {
+  background: linear-gradient(0deg, #060522 0%, #0d0d0d 100%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.main {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding-top: 32px;
+
+  .title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.movies {
+  width: 100%;
+  margin: 0 auto;
+
+  max-width: 1400px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+
+  padding-bottom: 20px;
+}
+
+.loading {
+  position: fixed;
+  bottom: 30px;
+  opacity: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background-color: rgb(165, 47, 47);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 12px;
+  display: flex;
+  gap: 8px;
+  transition: all 0.3s;
+
+  &.active {
+    opacity: 1;
+  }
+}
